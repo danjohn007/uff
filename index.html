@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uff! - Plataforma de Comercios con Acceso Privilegiado</title>
+    <meta name="description" content="Conecta con comercios locales y obtén descuentos exclusivos. Registro gratuito con beneficios inmediatos.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="fas fa-star text-warning me-2"></i>Uff!
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Beneficios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comercios">Comercios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planes">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.php" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+                    <a href="register.php" class="btn btn-warning">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-primary mb-4">
+                        ¡Ahorra en Tus Compras Favoritas!
+                    </h1>
+                    <p class="lead mb-4">
+                        Únete a la plataforma que te conecta con los mejores comercios locales. 
+                        Obtén descuentos exclusivos y promociones especiales.
+                    </p>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Registro 100% gratuito</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Hasta $5,000 MXN en descuentos mensuales</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <span>Más de 500 comercios afiliados</span>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <a href="register.php" class="btn btn-primary btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>Registrarse Gratis
+                        </a>
+                        <a href="#beneficios" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Más Información
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-card-preview">
+                        <div class="digital-card shadow-lg">
+                            <div class="card-header bg-gradient-primary text-white p-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold">Uff! Card</span>
+                                    <span class="badge bg-warning text-dark">GRATIS</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <div class="avatar-placeholder mb-3">
+                                    <i class="fas fa-user fa-3x text-muted"></i>
+                                </div>
+                                <h5 class="fw-bold">Tu Nombre Aquí</h5>
+                                <p class="text-muted">UFF0001000000</p>
+                                <div class="qr-placeholder mb-3">
+                                    <i class="fas fa-qrcode fa-4x text-primary"></i>
+                                </div>
+                                <small class="text-muted">Válida hasta Dic 2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">¿Por Qué Elegir Uff!?</h2>
+                <p class="lead text-muted">Descubre todos los beneficios de ser parte de nuestra comunidad</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-gift fa-3x text-primary"></i>
+                        </div>
+                        <h4>Descuentos Exclusivos</h4>
+                        <p class="text-muted">Accede a promociones que no encontrarás en ningún otro lugar</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4>Tarjeta Digital</h4>
+                        <p class="text-muted">Tu tarjeta siempre contigo en tu teléfono móvil</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4>Geolocalización</h4>
+                        <p class="text-muted">Encuentra comercios cerca de ti con promociones activas</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-primary"></i>
+                        </div>
+                        <h4>Ahorro Inteligente</h4>
+                        <p class="text-muted">Rastrea tus ahorros y optimiza tus compras</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-bell fa-3x text-primary"></i>
+                        </div>
+                        <h4>Notificaciones</h4>
+                        <p class="text-muted">Recibe alertas de nuevas promociones y ofertas especiales</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center h-100">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-handshake fa-3x text-primary"></i>
+                        </div>
+                        <h4>Apoyo Local</h4>
+                        <p class="text-muted">Contribuye al crecimiento de negocios locales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Carousel -->
+    <section id="comercios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Comercios Afiliados</h2>
+                <p class="lead text-muted">Más de 500 negocios te esperan con ofertas increíbles</p>
+            </div>
+            
+            <div id="businessCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-utensils fa-2x text-danger mb-2"></i>
+                                    <h6>Tacos El Rey</h6>
+                                    <small class="text-muted">20% de descuento</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-tshirt fa-2x text-info mb-2"></i>
+                                    <h6>Moda Carmen</h6>
+                                    <small class="text-muted">15% en toda la tienda</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-dumbbell fa-2x text-success mb-2"></i>
+                                    <h6>Fitness Zone</h6>
+                                    <small class="text-muted">30% mensualidad</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-spa fa-2x text-primary mb-2"></i>
+                                    <h6>Belleza VIP</h6>
+                                    <small class="text-muted">20% tratamientos</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-laptop fa-2x text-warning mb-2"></i>
+                                    <h6>Tech Store</h6>
+                                    <small class="text-muted">10% equipos</small>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="business-logo-card text-center p-3">
+                                    <i class="fas fa-coffee fa-2x text-dark mb-2"></i>
+                                    <h6>Café Premium</h6>
+                                    <small class="text-muted">2x1 en bebidas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#businessCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#businessCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section id="planes" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Planes y Membresías</h2>
+                <p class="lead text-muted">Elige el plan que mejor se adapte a tus necesidades</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Free Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card pricing-card h-100 border-0 shadow">
+                        <div class="card-header bg-light text-center border-0 py-4">
+                            <div class="pricing-icon mb-3">
+                                <i class="fas fa-star fa-2x text-secondary"></i>
+                            </div>
+                            <h4 class="fw-bold">Gratis</h4>
+                            <h2 class="display-4 fw-bold">$0</h2>
+                            <p class="text-muted">Para siempre</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Hasta $5,000 MXN en descuentos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tarjeta digital</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Acceso a promociones básicas</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>App móvil</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <a href="register.php" class="btn btn-outline-primary w-100">Registrarse Gratis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silver Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card pricing-card h-100 border-0 shadow">
+                        <div class="card-header bg-secondary text-white text-center border-0 py-4">
+                            <div class="pricing-icon mb-3">
+                                <i class="fas fa-medal fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold">Plata</h4>
+                            <h2 class="display-4 fw-bold">$199</h2>
+                            <p>por año</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Hasta $10,000 MXN en descuentos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tarjeta física opcional</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Promociones exclusivas</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Soporte prioritario</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <a href="register.php?plan=silver" class="btn btn-secondary w-100">Elegir Plata</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card pricing-card h-100 border-0 shadow border-warning">
+                        <div class="card-header bg-warning text-dark text-center border-0 py-4">
+                            <div class="pricing-icon mb-3">
+                                <i class="fas fa-crown fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold">Oro</h4>
+                            <h2 class="display-4 fw-bold">$399</h2>
+                            <p>por año</p>
+                            <span class="badge bg-danger">Más Popular</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Hasta $20,000 MXN en descuentos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tarjeta física premium</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Eventos exclusivos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Descuentos mejorados</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <a href="register.php?plan=gold" class="btn btn-warning w-100">Elegir Oro</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diamond Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card pricing-card h-100 border-0 shadow">
+                        <div class="card-header bg-dark text-white text-center border-0 py-4">
+                            <div class="pricing-icon mb-3">
+                                <i class="fas fa-gem fa-2x text-info"></i>
+                            </div>
+                            <h4 class="fw-bold">Diamante</h4>
+                            <h2 class="display-4 fw-bold">$799</h2>
+                            <p>por año</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Hasta $50,000 MXN en descuentos</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tarjeta diamante exclusiva</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Servicio concierge</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Acceso VIP completo</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <a href="register.php?plan=diamond" class="btn btn-dark w-100">Elegir Diamante</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Lo Que Dicen Nuestros Usuarios</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle fa-3x text-primary"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"He ahorrado más de $2,000 pesos en solo 2 meses. ¡Increíble!"</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">María González</cite>
+                        </footer>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle fa-3x text-primary"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"Los descuentos en mi gimnasio favorito son excelentes. 100% recomendado."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">Carlos Ruiz</cite>
+                        </footer>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center p-4">
+                        <div class="testimonial-avatar mb-3">
+                            <i class="fas fa-user-circle fa-3x text-primary"></i>
+                        </div>
+                        <blockquote class="blockquote">
+                            <p>"La app es súper fácil de usar y encuentro promociones cerca de mi casa."</p>
+                        </blockquote>
+                        <footer class="blockquote-footer">
+                            <cite title="Source Title">Ana Martínez</cite>
+                        </footer>
+                        <div class="stars text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">¿Listo Para Empezar a Ahorrar?</h2>
+            <p class="lead mb-4">Únete a miles de usuarios que ya están disfrutando de descuentos exclusivos</p>
+            <a href="register.php" class="btn btn-warning btn-lg">
+                <i class="fas fa-rocket me-2"></i>Registrarse Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-star text-warning me-2"></i>Uff! Platform
+                    </h5>
+                    <p>La plataforma líder en descuentos y promociones exclusivas para comercios locales.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white-50">Inicio</a></li>
+                        <li><a href="#beneficios" class="text-white-50">Beneficios</a></li>
+                        <li><a href="#comercios" class="text-white-50">Comercios</a></li>
+                        <li><a href="#planes" class="text-white-50">Planes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Soporte</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Centro de Ayuda</a></li>
+                        <li><a href="#" class="text-white-50">Términos de Uso</a></li>
+                        <li><a href="#" class="text-white-50">Privacidad</a></li>
+                        <li><a href="#" class="text-white-50">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <p><i class="fas fa-envelope me-2"></i>info@uff-platform.com</p>
+                    <p><i class="fas fa-phone me-2"></i>+52 55 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Ciudad de México, México</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 Uff! Platform. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
